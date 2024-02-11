@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <h1>Encriptador de Texto</h1>
+            <p class="small-text">El objetivo de este encriptador es proporcionar una herramienta simple para cifrar y descifrar texto utilizando reglas específicas de sustitución.</p>
+            <p class="small-text">Ingresa tu texto, elige la acción y observa el resultado.</p>
+
+            <label for="inputText">Texto:</label>
+            <textarea id="inputText" rows="4"></textarea>
+
+            <div class="buttons-container">
+                <button onclick="encryptText()">Encriptar</button>
+                <button onclick="decryptText()">Desencriptar</button>
+                <button onclick="clearText()">Borrar</button>
+                <button onclick="copyToClipboard()">Copiar</button>
+            </div>
+
+            <label for="outputText">Resultado:</label>
+            <textarea id="outputText" rows="4" readonly></textarea>
+
+            <div class="confirmation-message" id="confirmationMessage">Texto copiado al portapapeles</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
